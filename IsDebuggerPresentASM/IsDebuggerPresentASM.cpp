@@ -66,7 +66,7 @@ BOOL ASM_IsDebuggerPresent_Direct()
 
     __asm
     {
-        mov eax, dword ptr ds : [0x30] // PEB
+        mov eax, dword ptr fs : [0x30] // PEB
         movzx eax, byte ptr ds : [eax + 0x2] // beingDebugged
         mov beingDebugged, eax
     }
