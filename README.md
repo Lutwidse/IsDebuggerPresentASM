@@ -1,2 +1,2 @@
-# IsDebuggerPresentASM
- 
+## IsDebuggerPresentASM
+_AntiAntiAntiDebug_

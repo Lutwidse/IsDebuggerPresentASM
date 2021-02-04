@@ -1,0 +1,16 @@
+00401000 | 55                       | push ebp                                                                      |
+00401001 | 8BEC                     | mov ebp,esp                                                                   |
+00401003 | 51                       | push ecx                                                                      |
+00401004 | C745 FC 00000000         | mov dword ptr ss:[ebp-0x4],0x0                                                |
+0040100B | 64:A1 18000000           | mov eax,dword ptr fs:[0x18]                                                   |
+00401011 | 3E:8B40 30               | mov eax,dword ptr ds:[eax+0x30]                                               |
+00401015 | 3E:0FB640 02             | movzx eax,byte ptr ds:[eax+0x2]                                               |
+
+---
+
+EAX : 00338000
+...
+
+EFLAGS : 00000246
+ZF : 1
+...

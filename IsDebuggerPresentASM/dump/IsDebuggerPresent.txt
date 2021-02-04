@@ -1,0 +1,16 @@
+752DA520 | FF25 6C0E3475            | jmp dword ptr ds:[<&IsDebuggerPresent>]                                       |
+
+...
+
+758E4E80 | 64:A1 30000000           | mov eax,dword ptr fs:[30]                                                     |
+758E4E86 | 0FB640 02                | movzx eax,byte ptr ds:[eax+2]                                                 |
+758E4E8A | C3                       | ret                                                                           |
+
+---
+
+EAX : 00000001
+...
+
+EFLAGS : 00000246
+ZF : 1
+...
